@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(37, 109, 204); 
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    /*background-image: url(matrix-7247571_1280.png); 
+    background-repeat: repeat;
+    max-width: 6350%;
+    height: 6420%;*/
+    
+
+  }
+
+  main {
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    padding: 0 30px;
+    
+  }
+
+  h1 {
+    color: beige;
+    font-size: 12.5rem;
+    letter-spacing: .10em;
+    margin: 1em auto; 
+    text-shadow: .05em .05em 0 rgba(0,0,0,.25);
+    white-space: nowrap;
+    position: relative;
+    padding: 0.5em auto;
+    text-align: center;
+    
+  }
+
+  h2 {
+    color: beige;
+    margin-top: -146px;
+    text-align: center;
+    
+  }
+  
+  p {
+    color: #ccc;
+    margin-top: 0;
+    text-align: center;
+    display: inherit;
+  }
+
+  .img {
+
+border-radius: 50%;
+padding: 0.5em auto;
+width: 161.7px;
+/*height: 50%; */
+margin: 0.025em auto;
+display: inline-block;
+
+}
+
+.div1{
+    
+    justify-content: center;
+    text-align: center;
+    display: inherit;
+    position: relative;
+    padding: 5em 0.4em 5em ;
+    margin: 1em -1.65em 1em 1em;
+}
+
+
+.div2{
+    
+    justify-content: center;
+    text-align: center;
+    display: inherit;
+    position:relative;
+    padding: 0.5em auto ;
+    margin: 1em 1em 1em -0.55em;
+}
+
+.ghost {
+    justify-content: center;
+    display: inline-block;
+    padding: 0.5em auto;
+    margin: 1em auto;
+    animation: myAnim1 3s ease 1s 1 normal forwards;
+    
+    
+}
+
+.texterror{
+    display: block;
+    text-align: bottom;
+    justify-content: end;
+    margin:6em 1em 1em 1em;
+    /*padding:1em 1em 1em 1em; */
+}
+.italic {
+    color: black;
+}
+
+
+
+
+/* responsive */
+/*phone device */
+@media (min-width: 250px) and (max-width: 420px) {
+	html {
+		font-size: 7px;
+    display: inline;
+    justify-content: center;
+	}
+  .img {
+    border-radius: 50%;
+padding: 0.5em auto;
+width: 65.7px;
+/*height: 50%; */
+margin: 0.025em auto;
+display: inline-block;
+  }
+  
+}
+
+
+@media (min-width: 420px) and (max-width:950px) {
+	html {
+		font-size: 12px;
+    display: inline;
+    justify-content: center;
+	}
+  .img {
+border-radius: 50%;
+padding: 0.5em auto;
+width: 115.7px;
+/*height: 50%; */
+margin: 0.025em auto;
+display: inline-block;
+  }
+.texterror{
+    display: block;
+    text-align: bottom;
+    justify-content: end;
+    margin:-3em 1em 1em 1em;
+    
+}
+
+  
+}
+
+
+
+@media (min-width: 950px) {
+	html {
+		font-size: 26px;
+    display: inline;
+    justify-content: center;
+	}
+  .img {
+border-radius: 50%;
+padding: 0.5em auto;
+width: 225.7px;
+/*height: 50%; */
+margin: 0.025em auto;
+display: inline-block;
+  }
+  .texterror{
+    display: block;
+    text-align: bottom;
+    justify-content: end;
+    margin:0.2em 1em 1em 1em;
+   
+}
+.ghost {
+  justify-content: center;
+  display: inline-block;
+  padding: 0.5em auto;
+  margin: -11em auto;
+  
+}
+
+}
+
+
+
+
+
+
+
+@keyframes myAnim1 {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
